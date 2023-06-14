@@ -5,7 +5,7 @@ import './App.css'
 import { Link } from 'react-router-dom'
 import Example from './components/example/Example'
 
-const words = ["aa", "bb", "cc"];
+const words = ["aa","bb","cc"]
 
 function App() {
   const [count, setCount] = useState(0)
@@ -35,12 +35,12 @@ function App() {
       {/* example */}
       {words.map((word, i) => (
         <div key={`id-${i}`}>
-          <Example text={word} />
-
-          
+          <Example text={word} />        
         </div>
       ))}
-      
+      <div>
+      <Example text="this" />
+      </div>
     </>
   )
 }
